@@ -25,7 +25,7 @@ const RSVP = () => {
     
     try {
       // Send data directly to Google Sheets
-      await fetch('https://script.google.com/macros/s/AKfycbxiMXcllSXLEQyScww7Fg7GS1W4QzNfBK1KoH6dflXGpZ-i2dBDIFo-mmyN51DgCAJj/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbx7I6ElQxPwRqoeDBbsgn2vT2jyL21seWehMm7snk7GQNKjoQmLUrfMrUg8hus8cwz5/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
