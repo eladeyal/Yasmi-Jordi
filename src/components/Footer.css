@@ -48,33 +48,60 @@
   50% { opacity: 1; }
 }
 
-/* E3E Technologies Signature */
+/* E3E Technologies Signature - Simple & Clean */
 .e3e-signature {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.e3e-signature a {
-  text-decoration: none;
+.e3e-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  color: rgba(255, 255, 255, 0.4);
-  transition: all 0.5s ease;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.35);
+  transition: all 0.3s ease;
+  font-size: 13px;
 }
 
-.e3e-signature a:hover {
-  color: rgba(255, 255, 255, 0.7);
+.e3e-link:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.e3e-signature .group:hover svg {
+.e3e-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.e3e-link:hover .e3e-icon {
+  opacity: 0.8;
   transform: rotate(12deg);
 }
 
-.e3e-signature .group:hover .relative span:last-child {
-  transform: scaleX(1);
+.e3e-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.e3e-by {
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.e3e-name {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 1px;
 }
 
 /* Responsive */
