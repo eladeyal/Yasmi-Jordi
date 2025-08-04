@@ -33,7 +33,9 @@ const Footer = () => {
                 stroke="currentColor" 
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0 9c-5 0-9-4-9-9m9 9c5 0 9-4 9-9m-9 9v-9m0 9c-4 0-8-4-8-9s4-9 8-9" />
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="m9,12 A9,9 0 0,1 15,12 A9,9 0 0,1 9,12"></path>
               </svg>
               <div className="e3e-text">
                 <span className="e3e-by">BY</span>
