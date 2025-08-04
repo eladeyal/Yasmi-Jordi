@@ -27,19 +27,21 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="e3e-link"
             >
-              <svg 
-                className="e3e-icon" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="m9,12 A9,9 0 0,1 15,12 A9,9 0 0,1 9,12"></path>
-              </svg>
               <div className="e3e-text">
                 <span className="e3e-by">BY</span>
-                <span className="e3e-name">E3E Technologies</span>
+                <div className="e3e-name-with-icon">
+                  <span className="e3e-name">E3E Technologies</span>
+                  <svg 
+                    className="e3e-icon" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="m9,12 A9,9 0 0,1 15,12 A9,9 0 0,1 9,12"></path>
+                  </svg>
+                </div>
               </div>
             </a>
           </div>
