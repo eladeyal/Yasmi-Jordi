@@ -1,0 +1,141 @@
+.event-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.event-main-info {
+  margin: 40px 0 60px 0;
+}
+
+.event-time {
+  font-size: 20px;
+  color: #0f598b;
+  font-weight: 500;
+  margin: 10px 0 30px 0;
+}
+
+.venue-info {
+  margin: 30px 0;
+  padding: 30px;
+  background-color: #F1ECE8;
+  border-radius: 15px;
+}
+
+.venue-info h4 {
+  font-size: 22px;
+  color: #0f598b;
+  margin-bottom: 10px;
+}
+
+.venue-info p {
+  color: #666;
+  font-size: 16px;
+}
+
+.event-attire {
+  font-style: italic;
+  color: #555;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: rgba(15, 89, 139, 0.05);
+  border-radius: 10px;
+}
+
+.event-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin: 30px 0;
+}
+
+.timeline {
+  margin: 60px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.timeline-time {
+  background-color: #0f598b;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 120px;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-content h4 {
+  color: #0f598b;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.timeline-content p {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+.date-signature {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-signature .primary-font {
+  font-size: 40px;
+}
+
+.date-signature .secondary-font {
+  font-size: 20px;
+}
+
+/* RTL Support */
+[dir="rtl"] .timeline-item {
+  text-align: right;
+}
+
+[dir="rtl"] .timeline-time {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .timeline-time {
+    margin-right: 0;
+    margin-bottom: 15px;
+    align-self: center;
+  }
+  
+  .timeline-content {
+    text-align: center;
+  }
+  
+  [dir="rtl"] .timeline-time {
+    margin-left: 0;
+  }
+}

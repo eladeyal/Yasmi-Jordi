@@ -1,0 +1,42 @@
+.language-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: rgba(15, 89, 139, 0.9);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.language-toggle:hover {
+  background-color: #0f598b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(15, 89, 139, 0.3);
+}
+
+[dir="rtl"] .language-toggle {
+  right: auto;
+  left: 20px;
+}
+
+/* Mobile adjustments to avoid hamburger menu */
+@media (max-width: 768px) {
+  .language-toggle {
+    top: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  [dir="rtl"] .language-toggle {
+    right: auto;
+    left: 15px;
+  }
+}

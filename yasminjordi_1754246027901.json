@@ -1,0 +1,95 @@
+{
+  "projectOverview": {
+    "clientName": "Yasmin & Jordi",
+    "projectType": "Wedding Website",
+    "sector": "Wedding Services",
+    "targetDomain": "yasmin&jordi.love",
+    "projectDeadline": "2025-08-10",
+    "timestamp": "2025-08-03T18:33:47.898Z"
+  },
+  
+  "clientContact": {
+    "phone": "+972 53-798-8580",
+    "email": "TBD",
+    "preferredCommunication": "Phone"
+  },
+  
+  "projectRequirements": {
+    "primaryGoal": "Create a wedding website similar to TheKnot.com style",
+    "inspirationReference": "https://www.theknot.com/us/anna-hamilton-and-matthew-maziarczyk-jul-2025",
+    "keyFeatures": [
+      "Guest RSVP confirmation system",
+      "Integration with Google Sheets for RSVP management",
+      "Simple and elegant design without complex authentication",
+      "Multi-language support (Hebrew/English)",
+      "Mobile-responsive design"
+    ],
+    "technicalStack": [
+      "JavaScript",
+      "React"
+    ]
+  },
+  
+  "designSpecifications": {
+    "brandIdentity": {
+      "hasLogo": false,
+      "brandColors": ["#F1ECE8", "rgb(15, 89, 139)"],
+      "primaryFont": {
+        "family": "La Belle Aurore",
+        "weight": "400",
+        "size": "70px",
+        "lineHeight": "70px",
+        "color": "rgb(15, 89, 139)"
+      },
+      "secondaryFont": {
+        "family": "Reenie Beanie", 
+        "weight": "400",
+        "size": "25px",
+        "lineHeight": "20px",
+        "color": "rgb(15, 89, 139)"
+      }
+    },
+    "visualElements": {
+      "hasImages": true,
+      "needGallery": false,
+      "needBlog": false,
+      "designStyle": "Elegant, romantic, wedding-themed"
+    }
+  },
+  
+  "functionalRequirements": {
+    "rsvpSystem": {
+      "required": true,
+      "integration": "Google Sheets",
+      "features": [
+        "Guest confirmation tracking",
+        "Easy management interface",
+        "No complex authentication required"
+      ]
+    },
+    "multiLanguage": {
+      "required": true,
+      "languages": ["Hebrew", "English"]
+    },
+    "contentManagement": {
+      "needCMS": false,
+      "needBlog": false,
+      "needPaymentSystem": false,
+      "needLeadsForm": false
+    }
+  },
+  
+  "hosting": {
+    "hasDomain": false,
+    "hasHosting": false,
+    "domainNeeded": true,
+    "hostingNeeded": true
+  },
+  
+  "projectStatus": {
+    "phase": "Initial Planning",
+    "startDate": "TBD",
+    "clientSignature": "Pending",
+    "signatureDate": "Pending"
+  }
+}

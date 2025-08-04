@@ -1,0 +1,393 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #F1ECE8 0%, #e8ddd6 100%);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Mobile navigation (hamburger menu only) */
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 0;
+  background: transparent;
+  display: none; /* Hidden on desktop */
+}
+
+.mobile-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.mobile-nav .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0f598b;
+  z-index: 101;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 101;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.mobile-nav-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background: rgba(241, 236, 232, 0.98);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: left 0.3s ease;
+}
+
+.mobile-nav-menu.active {
+  left: 0;
+}
+
+.mobile-nav-menu a {
+  text-decoration: none;
+  font-family: "Reenie Beanie", cursive;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(15, 89, 139);
+  font-size: 28px;
+  line-height: 28px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.mobile-nav-menu a:hover {
+  color: #0f598b;
+}
+
+/* Desktop navigation inside hero content */
+.desktop-nav {
+  margin: 30px 0;
+}
+
+.desktop-nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.desktop-nav-menu a {
+  text-decoration: none;
+  font-family: "Reenie Beanie", cursive;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(15, 89, 139);
+  font-size: 23px;
+  line-height: 23px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 8px 12px;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.desktop-nav-menu a:hover {
+  color: #084a73;
+  border-bottom-color: #0f598b;
+}
+
+/* Hebrew font for navigation */
+[dir="rtl"] .desktop-nav-menu a {
+  font-family: "Playpen Sans", sans-serif;
+  font-weight: 400;
+}
+
+[dir="rtl"] .mobile-nav-menu a {
+  font-family: "Playpen Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* Hebrew font for title */
+[dir="rtl"] .elegant-title {
+  font-family: "Playpen Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* Hebrew font for other hero text */
+[dir="rtl"] .subtitle,
+[dir="rtl"] .hero-location {
+  font-family: "Playpen Sans", sans-serif;
+}
+
+/* Hebrew font for buttons */
+[dir="rtl"] .hero-btn {
+  font-family: "Playpen Sans", sans-serif;
+  font-weight: 500;
+}
+
+/* Hero content */
+.hero-overlay {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 60px;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Toast icon */
+.toast-icon {
+  margin-bottom: 40px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.toast-icon img {
+  max-width: 120px;
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-10px); 
+  }
+}
+
+/* Typography */
+.elegant-title {
+  font-family: "La Belle Aurore", cursive;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(15, 89, 139);
+  font-size: 70px;
+  line-height: 70px;
+  margin: 20px 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #666;
+  margin: 15px 0;
+  font-weight: 300;
+}
+
+.hero-location {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Hero actions */
+.hero-actions {
+  margin-top: 40px;
+}
+
+.hero-btn {
+  background: #0f598b;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-btn:hover {
+  background: #084a73;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(15, 89, 139, 0.3);
+}
+
+/* Background decoration */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(15, 89, 139, 0.05) 0%, transparent 70%);
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: block; /* Show mobile nav on mobile */
+  }
+  
+  .desktop-nav {
+    display: none; /* Hide desktop nav on mobile */
+  }
+
+  .hero-overlay {
+    padding: 120px 20px 60px;
+  }
+
+  .elegant-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-location {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .toast-icon img {
+    max-width: 100px;
+  }
+
+  .hero-btn {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .elegant-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-location {
+    font-size: 0.9rem;
+  }
+
+  .toast-icon img {
+    max-width: 80px;
+  }
+
+  .hero-overlay {
+    padding: 100px 15px 40px;
+  }
+}
+
+/* RTL Support */
+[dir="rtl"] .hero-nav .nav-content {
+  direction: ltr;
+}
+
+[dir="rtl"] .hero-nav .nav-menu {
+  direction: rtl;
+}
+
+/* Animation for page load */
+.hero-content > * {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hero-content .toast-icon {
+  animation-delay: 0.2s;
+}
+
+.hero-content .elegant-title {
+  animation-delay: 0.4s;
+}
+
+.hero-content .subtitle {
+  animation-delay: 0.6s;
+}
+
+.hero-content .hero-location {
+  animation-delay: 0.8s;
+}
+
+.hero-content .desktop-nav {
+  animation-delay: 1s;
+}
+
+.hero-content .hero-actions {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
