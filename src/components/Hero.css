@@ -154,30 +154,30 @@
 
 /* Hebrew font for navigation */
 [dir="rtl"] .desktop-nav-menu a {
-  font-family: "Noto Sans Hebrew", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400;
 }
 
 [dir="rtl"] .mobile-nav-menu a {
-  font-family: "Noto Sans Hebrew", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400;
 }
 
 /* Hebrew font for title */
 [dir="rtl"] .elegant-title {
-  font-family: "Noto Sans Hebrew", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 700;
 }
 
 /* Hebrew font for other hero text */
 [dir="rtl"] .subtitle,
 [dir="rtl"] .hero-location {
-  font-family: "Noto Sans Hebrew", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 /* Hebrew font for buttons */
 [dir="rtl"] .hero-btn {
-  font-family: "Noto Sans Hebrew", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 500;
 }
 

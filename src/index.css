@@ -14,7 +14,7 @@ body {
 /* Hebrew text styling */
 [dir="rtl"] body,
 [dir="rtl"] * {
-  font-family: 'Playpen Sans', 'Montserrat', sans-serif;
+  font-family: 'M PLUS Rounded 1c', 'Montserrat', sans-serif;
 }
 
 .container {
@@ -45,12 +45,12 @@ body {
 
 /* Hebrew elegant title */
 [dir="rtl"] .elegant-title {
-  font-family: 'Playpen Sans', cursive;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 /* English elegant title */
 [dir="ltr"] .elegant-title {
-  font-family: 'Puppies Play', 'La Belle Aurore', cursive;
+  font-family: 'La Belle Aurore', cursive;
 }
 
 .subtitle {
@@ -64,12 +64,12 @@ body {
 
 /* Hebrew subtitle */
 [dir="rtl"] .subtitle {
-  font-family: 'Playpen Sans', cursive;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 /* English subtitle */
 [dir="ltr"] .subtitle {
-  font-family: 'Puppies Play', 'Reenie Beanie', cursive;
+  font-family: 'Reenie Beanie', cursive;
 }
 
 /* Responsive typography */

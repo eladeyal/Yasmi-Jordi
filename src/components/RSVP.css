@@ -219,22 +219,22 @@
 
 /* Hebrew font support */
 [dir="rtl"] .rsvp-title {
-  font-family: "Noto Sans Hebrew", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 700;
 }
 
 [dir="rtl"] .rsvp-subtitle {
-  font-family: "Noto Sans Hebrew", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 [dir="rtl"] .elegant-label {
-  font-family: "Noto Sans Hebrew", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
 
 [dir="rtl"] .btn-text {
-  font-family: "Noto Sans Hebrew", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
