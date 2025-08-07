@@ -11,6 +11,12 @@ body {
   line-height: 1.6;
 }
 
+/* Hebrew text styling */
+[dir="rtl"] body,
+[dir="rtl"] * {
+  font-family: 'Playpen Sans', 'Montserrat', sans-serif;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -20,30 +26,50 @@ body {
 /* Typography */
 .primary-font {
   font-family: 'La Belle Aurore', cursive;
-  color: #0f598b;
+  color: #A7B78D;
 }
 
 .secondary-font {
   font-family: 'Reenie Beanie', cursive;
-  color: #0f598b;
+  color: #A7B78D;
 }
 
 .elegant-title {
   font-family: 'La Belle Aurore', cursive;
   font-size: 70px;
   line-height: 70px;
-  color: #0f598b;
+  color: #A7B78D;
   text-align: center;
   margin-bottom: 20px;
+}
+
+/* Hebrew elegant title */
+[dir="rtl"] .elegant-title {
+  font-family: 'Playpen Sans', cursive;
+}
+
+/* English elegant title */
+[dir="ltr"] .elegant-title {
+  font-family: 'Puppies Play', 'La Belle Aurore', cursive;
 }
 
 .subtitle {
   font-family: 'Reenie Beanie', cursive;
   font-size: 25px;
   line-height: 20px;
-  color: #0f598b;
+  color: #A7B78D;
   text-align: center;
   margin-bottom: 30px;
+}
+
+/* Hebrew subtitle */
+[dir="rtl"] .subtitle {
+  font-family: 'Playpen Sans', cursive;
+}
+
+/* English subtitle */
+[dir="ltr"] .subtitle {
+  font-family: 'Puppies Play', 'Reenie Beanie', cursive;
 }
 
 /* Responsive typography */

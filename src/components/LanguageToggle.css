@@ -3,7 +3,7 @@
   top: 20px;
   right: 20px;
   z-index: 1000;
-  background-color: rgba(15, 89, 139, 0.9);
+  background-color: rgba(167, 183, 141, 0.9);
   color: white;
   border: none;
   padding: 10px 15px;
@@ -16,9 +16,9 @@
 }
 
 .language-toggle:hover {
-  background-color: #0f598b;
+  background-color: #A7B78D;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(15, 89, 139, 0.3);
+  box-shadow: 0 5px 15px rgba(167, 183, 141, 0.3);
 }
 
 [dir="rtl"] .language-toggle {

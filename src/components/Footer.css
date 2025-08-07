@@ -1,8 +1,9 @@
 .footer {
-  background-color: #0f598b;
-  color: white;
-  padding: 60px 0 40px 0;
+  background-color: #FFFFFF;
+  color: #333;
+  padding: 40px 0 30px 0;
   text-align: center;
+  border-top: 1px solid #f0f0f0;
 }
 
 .footer-content {
@@ -14,24 +15,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 30px;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 .footer-signature .primary-font {
   font-size: 40px;
-  color: white;
+  color: #A7B78D;
 }
 
 .footer-signature .secondary-font {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #666;
 }
 
 .footer-text {
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 20px;
+  color: #666;
+  margin-bottom: 15px;
 }
 
 .footer-hearts {
@@ -39,7 +40,7 @@
 }
 
 .footer-hearts .primary-font {
-  color: rgba(255, 255, 255, 0.6);
+  color: #A7B78D;
   animation: twinkle 3s ease-in-out infinite;
 }
 
@@ -52,7 +53,7 @@
 .e3e-signature {
   margin-top: 25px;
   padding-top: 15px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(102, 102, 102, 0.15);
 }
 
 .e3e-link {
@@ -60,13 +61,13 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(102, 102, 102, 0.7);
   transition: all 0.3s ease;
   font-size: 13px;
 }
 
 .e3e-link:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(167, 183, 141, 0.8);
 }
 
 .e3e-icon {
@@ -113,7 +114,11 @@
 /* Responsive */
 @media (max-width: 768px) {
   .footer {
-    padding: 40px 0 30px 0;
+    padding: 30px 0 20px 0;
+  }
+  
+  .footer-signature {
+    margin-bottom: 15px;
   }
   
   .footer-signature .primary-font {
@@ -122,5 +127,24 @@
   
   .footer-signature .secondary-font {
     font-size: 18px;
+  }
+  
+  .footer-text {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 0 15px 0;
+  }
+  
+  .footer-signature {
+    margin-bottom: 12px;
+  }
+  
+  .footer-text {
+    margin-bottom: 10px;
+    font-size: 14px;
   }
 }

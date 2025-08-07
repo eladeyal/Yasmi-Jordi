@@ -19,7 +19,16 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="hero">
+    <section 
+      id="home" 
+      className="hero" 
+      style={{
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/Our Cover Photo.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
       {/* Mobile hamburger menu only */}
       <div className="mobile-nav">
         <div className="container">
@@ -41,7 +50,6 @@ const Hero = () => {
               <li><a href="#home" onClick={() => scrollToSection('home')}>{t('nav.home')}</a></li>
               <li><a href="#story" onClick={() => scrollToSection('story')}>{t('nav.story')}</a></li>
               <li><a href="#photos" onClick={() => scrollToSection('photos')}>{t('nav.photos')}</a></li>
-              <li><a href="#faqs" onClick={() => scrollToSection('faqs')}>{t('nav.faqs')}</a></li>
               <li><a href="#rsvp" onClick={() => scrollToSection('rsvp')}>{t('nav.rsvp')}</a></li>
             </ul>
           </div>
@@ -51,10 +59,7 @@ const Hero = () => {
       <div className="hero-overlay">
         <div className="container">
           <div className="hero-content">
-            {/* Toast icon */}
-            <div className="toast-icon">
-              <img src="/toast.png" alt="Toast Icon" />
-            </div>
+
             
             <h1 className="elegant-title">{t('hero.names')}</h1>
             <p className="subtitle">{t('hero.date')}</p>
@@ -66,7 +71,6 @@ const Hero = () => {
                 <li><a href="#home" onClick={() => scrollToSection('home')}>{t('nav.home')}</a></li>
                 <li><a href="#story" onClick={() => scrollToSection('story')}>{t('nav.story')}</a></li>
                 <li><a href="#photos" onClick={() => scrollToSection('photos')}>{t('nav.photos')}</a></li>
-                <li><a href="#faqs" onClick={() => scrollToSection('faqs')}>{t('nav.faqs')}</a></li>
                 <li><a href="#rsvp" onClick={() => scrollToSection('rsvp')}>{t('nav.rsvp')}</a></li>
               </ul>
             </nav>

@@ -2,11 +2,11 @@
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
 .rsvp-header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .heart-icon {
@@ -24,7 +24,7 @@
   font-family: "La Belle Aurore", cursive;
   font-size: 48px;
   line-height: 48px;
-  color: #0f598b;
+  color: #A7B78D;
   margin: 20px 0;
   font-weight: 400;
 }
@@ -53,7 +53,7 @@
 .elegant-label {
   display: block;
   margin-bottom: 12px;
-  color: #0f598b;
+  color: #A7B78D;
   font-weight: 500;
   font-size: 16px;
   font-family: "Reenie Beanie", cursive;
@@ -74,7 +74,7 @@
 
 .elegant-input:focus {
   outline: none;
-  border-color: #0f598b;
+  border-color: #A7B78D;
   box-shadow: 0 0 0 3px rgba(15, 89, 139, 0.1);
   background: white;
 }
@@ -108,23 +108,23 @@
 }
 
 .guest-btn:hover {
-  border-color: #0f598b;
+  border-color: #A7B78D;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(15, 89, 139, 0.2);
+  box-shadow: 0 5px 15px rgba(167, 183, 141, 0.2);
 }
 
 .guest-btn.active {
-  background: #0f598b;
+  background: #A7B78D;
   color: white;
-  border-color: #0f598b;
+  border-color: #A7B78D;
   transform: scale(1.1);
-  box-shadow: 0 8px 25px rgba(15, 89, 139, 0.3);
+  box-shadow: 0 8px 25px rgba(167, 183, 141, 0.3);
 }
 
 .rsvp-submit-btn {
   width: 100%;
   padding: 20px;
-  background: linear-gradient(135deg, #0f598b 0%, #20B2AA 100%);
+  background: linear-gradient(135deg, #A7B78D 0%, #9aa67b 100%);
   color: white;
   border: none;
   border-radius: 50px;
@@ -143,7 +143,7 @@
 
 .rsvp-submit-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 35px rgba(15, 89, 139, 0.4);
+  box-shadow: 0 15px 35px rgba(167, 183, 141, 0.4);
 }
 
 .rsvp-submit-btn:active {

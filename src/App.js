@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Hero from './components/Hero';
 import OurStory from './components/OurStory';
+import Photos from './components/Photos';
 import EventDetails from './components/EventDetails';
 import RSVP from './components/RSVP';
 import Footer from './components/Footer';
@@ -16,6 +17,7 @@ function App() {
       <LanguageToggle />
       <Hero />
       <OurStory />
+      <Photos />
       <EventDetails />
       <RSVP />
       <Footer />

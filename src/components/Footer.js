@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-signature">
             <span className="primary-font">Y&J</span>
-            <span className="secondary-font">{t('footer.date')}</span>
+            <span className="secondary-font">21.8.2025</span>
           </div>
           
           <p className="footer-text">{t('footer.created')}</p>

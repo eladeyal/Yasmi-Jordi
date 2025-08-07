@@ -15,10 +15,6 @@ const OurStory = () => {
           <div className="story-text">
             <p>{t('story.content')}</p>
           </div>
-          
-          <div className="heart-decoration">
-            <span className="primary-font">♥</span>
-          </div>
         </div>
       </div>
     </section>

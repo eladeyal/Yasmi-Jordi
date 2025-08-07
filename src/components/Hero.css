@@ -1,6 +1,9 @@
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #F1ECE8 0%, #e8ddd6 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -30,11 +33,12 @@
 .mobile-nav .logo {
   font-size: 28px;
   font-weight: bold;
-  color: #0f598b;
+  color: white;
   z-index: 101;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .menu-toggle {
@@ -50,9 +54,10 @@
 .menu-toggle span {
   width: 25px;
   height: 3px;
-  background-color: #333;
+  background-color: white;
   margin: 3px 0;
   transition: 0.3s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .menu-toggle.active span:nth-child(1) {
@@ -95,7 +100,7 @@
   font-family: "Reenie Beanie", cursive;
   font-style: normal;
   font-weight: 400;
-  color: rgb(15, 89, 139);
+  color: #A7B78D;
   font-size: 28px;
   line-height: 28px;
   transition: color 0.3s ease;
@@ -104,7 +109,7 @@
 }
 
 .mobile-nav-menu a:hover {
-  color: #0f598b;
+  color: #96A67B;
 }
 
 /* Desktop navigation inside hero content */
@@ -128,7 +133,7 @@
   font-family: "Reenie Beanie", cursive;
   font-style: normal;
   font-weight: 400;
-  color: rgb(15, 89, 139);
+  color: white;
   font-size: 23px;
   line-height: 23px;
   transition: all 0.3s ease;
@@ -138,11 +143,13 @@
   border-bottom: 2px solid transparent;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .desktop-nav-menu a:hover {
-  color: #084a73;
-  border-bottom-color: #0f598b;
+  color: #A7B78D;
+  border-bottom-color: #A7B78D;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 /* Hebrew font for navigation */
@@ -180,7 +187,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 20px 60px;
+  padding: 80px 20px 40px;
+  background: transparent;
 }
 
 .hero-content {
@@ -217,26 +225,29 @@
   font-family: "La Belle Aurore", cursive;
   font-style: normal;
   font-weight: 400;
-  color: rgb(15, 89, 139);
+  color: white;
   font-size: 70px;
   line-height: 70px;
   margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: #666;
+  color: white;
   margin: 15px 0;
   font-weight: 300;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .hero-location {
   font-size: 1.2rem;
-  color: #777;
+  color: white;
   margin-bottom: 40px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 /* Hero actions */
@@ -245,7 +256,7 @@
 }
 
 .hero-btn {
-  background: #0f598b;
+  background: #A7B78D;
   color: white;
   border: none;
   padding: 15px 40px;
@@ -259,27 +270,14 @@
 }
 
 .hero-btn:hover {
-  background: #084a73;
+  background: #9aa67b;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(15, 89, 139, 0.3);
+  box-shadow: 0 8px 25px rgba(167, 183, 141, 0.3);
 }
 
-/* Background decoration */
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(15, 89, 139, 0.05) 0%, transparent 70%);
-  animation: rotate 30s linear infinite;
-}
+/* Background decoration - removed for photo background */
 
-@keyframes rotate {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -292,7 +290,7 @@
   }
 
   .hero-overlay {
-    padding: 120px 20px 60px;
+    padding: 100px 15px 30px;
   }
 
   .elegant-title {
@@ -338,7 +336,7 @@
   }
 
   .hero-overlay {
-    padding: 100px 15px 40px;
+    padding: 80px 10px 20px;
   }
 }
 

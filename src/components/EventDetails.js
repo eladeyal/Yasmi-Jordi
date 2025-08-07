@@ -43,14 +43,13 @@ const EventDetails = () => {
               <div className="timeline-time">{t('timeline.dancing')}</div>
               <div className="timeline-content">
                 <h4>{t('timeline.dancing.title')}</h4>
-                <p>{t('timeline.dancing.desc')}</p>
               </div>
             </div>
           </div>
           
           <div className="date-signature">
             <span className="primary-font">Y&J</span>
-            <span className="secondary-font">10.8.2025</span>
+            <span className="secondary-font">21.8.2025</span>
           </div>
         </div>
       </div>

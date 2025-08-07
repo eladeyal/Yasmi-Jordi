@@ -5,7 +5,7 @@
 }
 
 .story-text {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 .story-text p {
@@ -15,28 +15,27 @@
   margin-bottom: 20px;
 }
 
-.heart-decoration {
-  margin: 40px 0;
-}
 
-.heart-decoration span {
-  font-size: 40px;
-  color: #0f598b;
-  animation: heartbeat 2s ease-in-out infinite;
-}
-
-@keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-}
 
 /* Responsive */
 @media (max-width: 768px) {
-  .story-text p {
-    font-size: 16px;
+  .story-text {
+    margin: 15px 0;
   }
   
-  .heart-decoration span {
-    font-size: 30px;
+  .story-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-text {
+    margin: 10px 0;
+  }
+  
+  .story-text p {
+    font-size: 15px;
+    margin-bottom: 12px;
   }
 }
