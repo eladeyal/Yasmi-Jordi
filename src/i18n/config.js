@@ -27,10 +27,10 @@ const resources = {
       // Event Details
       "event.title": "The Celebration",
       "event.date": "Thursday, August 21, 2025",
-      "event.time": "18:00–24:00",
+      "event.time": "19:30 - till the music writes its last note",
       "event.venue": "Gaya Gardens",
       "event.address": "Gaya Gardens, Hadera",
-      "event.attire": "Attire: Formal - Please wear bright colors and elegant attire",
+      "event.attire": "Attire: Israeli formal - no swimsuits or flip flops",
       "event.description": "We will celebrate our love with family and friends. Join us for an evening of dining, dancing, and unforgettable memories.",
       
       // Timeline
@@ -84,10 +84,10 @@ const resources = {
       // Event Details
       "event.title": "החגיגה",
       "event.date": "יום חמישי, 21 באוגוסט, 2025",
-      "event.time": "18:00–24:00",
+      "event.time": "19:30 - עד שהמוזיקה תכתוב את הנוטה האחרונה שלה",
       "event.venue": "Gaya Gardens",
       "event.address": "חדרה, ישראל",
-      "event.attire": "לבוש: חגיגי - אנא לבשו צבעים בהירים ולבוש אלגנטי",
+      "event.attire": "לבוש: חגיגי ישראלי - ללא בגדי ים או כפכפים",
       "event.description": "נחגג את האהבה שלנו עם המשפחה והחברים. הצטרפו אלינו לערב של אוכל, ריקודים וזכרונות בלתי נשכחים.",
       
       // Timeline
