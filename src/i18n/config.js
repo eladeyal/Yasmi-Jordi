@@ -84,7 +84,7 @@ const resources = {
       // Event Details
       "event.title": "החגיגה",
       "event.date": "יום חמישי, 21 באוגוסט, 2025",
-      "event.time": "19:30 - עד שהמוזיקה תכתוב את הנוטה האחרונה שלה",
+      "event.time": "19:30 - עד שתיגמר המוסיקה",
       "event.venue": "Gaya Gardens",
       "event.address": "חדרה, ישראל",
       "event.attire": "לבוש: חגיגי ישראלי - ללא בגדי ים או כפכפים",
